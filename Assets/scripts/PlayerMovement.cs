@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundLayer;
+    [SerializeField] private LayerMask platformLayerMask; // Assign the platform layer here
+    private BoxCollider2D playerCollider;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -35,8 +37,10 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         originalSpeed = moveSpeed;
         currentStamina = maxStamina;
-        Debug.Log("Initial Stamina: " + currentStamina); 
-        UpdateStaminaSlider(); 
+        Debug.Log("Initial Stamina: " + currentStamina);
+        UpdateStaminaSlider();
+
+        playerCollider = GetComponent<BoxCollider2D>(); // Get the player's collider
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -76,7 +80,15 @@ public class PlayerMovement : MonoBehaviour
         // Raycast downwards to check for ground
         RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, groundLayer);
         isGrounded = hit.collider != null;
-        wasGroundedLastFrame = isGrounded; // You can use this to detect when the player just landed
+
+        // Debug to check if the player is considered grounded
+        Debug.Log("Is Grounded: " + isGrounded);
+
+        // Debug to show the collider's tag the player is currently on top of
+        if (hit.collider != null)
+        {
+            Debug.Log("Standing on: " + hit.collider.tag);
+        }
 
         animator.SetBool("IsGrounded", isGrounded);
 
@@ -85,12 +97,25 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsFalling", false);
+
+            // Debug to confirm jump
+            Debug.Log("Jumping");
         }
 
         if (!isGrounded && rb.velocity.y < 0)
         {
             animator.SetBool("IsFalling", true);
             animator.SetBool("IsJumping", false);
+
+            // Debug to confirm the player is falling
+            Debug.Log("Falling");
+        }
+        if (Input.GetKeyDown(KeyCode.S) && !isGrounded)
+        {
+            StartCoroutine(DropDown());
+
+            // Debug to confirm drop down
+            Debug.Log("Trying to Drop Down");
         }
         else if (isGrounded)
         {
@@ -198,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     //pudding powerUp 
-    public Collider2D playerCollider; // Assign this via the inspector
+    
 
     public void ActivatePuddingPower(float duration)
     {
@@ -210,6 +235,33 @@ public class PlayerMovement : MonoBehaviour
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("PassThroughWalls"), true);
         yield return new WaitForSeconds(duration);
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("PassThroughWalls"), false);
+    }
+
+    private IEnumerator DropDown()
+    {
+        // Allow the player to drop down through the platform
+        if (isGrounded)
+        {
+            // Find all colliders that are considered one-way platforms
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, platformLayerMask);
+            foreach (Collider2D collider in colliders)
+            {
+                // Disable the platform's collider temporarily
+                collider.enabled = false;
+            }
+            yield return new WaitForSeconds(0.5f); // Wait for half a second
+            foreach (Collider2D collider in colliders)
+            {
+                // Re-enable the platform's collider
+                collider.enabled = true;
+            }
+        }
+    }
+
+    private bool IsComingFromBelow(Collider2D platform)
+    {
+        // Assuming the player's position is the center at their feet
+        return transform.position.y < platform.bounds.max.y;
     }
 }
 
