@@ -8,6 +8,7 @@ TagManager:
   - PassThroughWalls
   - Enemy
   - EnemyHead
+  - Ladder
   layers:
   - Default
   - TransparentFX

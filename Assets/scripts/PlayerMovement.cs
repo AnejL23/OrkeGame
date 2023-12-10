@@ -21,13 +21,16 @@ public class PlayerMovement : MonoBehaviour
     private bool wasGroundedLastFrame;
 
     private float originalSpeed;
-  
+
     public float maxStamina = 100f;
     private float currentStamina;
     public float bounceForce = 5f;
     private float staminaDrain = 40f;
     private float staminaRegen = 1f;
     private bool isSprinting;
+
+    private bool isClimbing; 
+    private LadderClimb currentLadder;
 
     [SerializeField] private Slider staminaSlider;
 
@@ -45,79 +48,93 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check if the collision is with the enemy head
         if (collision.gameObject.CompareTag("EnemyHead"))
         {
-            Debug.Log("Hit enemy head");
-            // Bounce the player up a little
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
-
-            // Defeat the enemy
-            EnemyAI enemyAI = collision.transform.parent.GetComponent<EnemyAI>();
-            if (enemyAI != null)
+            // Confirm the player is coming from above
+            if (IsPlayerComingFromAbove(collision))
             {
-                enemyAI.DefeatEnemy();
+                // Bounce the player up
+                rb.velocity = new Vector2(rb.velocity.x, bounceForce);
+
+                // Defeat the enemy
+                collision.gameObject.GetComponentInParent<EnemyAI>().DefeatEnemy();
+
+                // Do not proceed to take damage since we hit the enemy head
+                return;
             }
         }
+
+        // Check if the collision is with the enemy body
         else if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Hit enemy body");
-            // Handle the case where the player hits the enemy from the side or below
+            // Player hits enemy body, take damage
             Vector2 knockbackDir = (transform.position - collision.transform.position).normalized;
             GetComponent<HealthManager>().TakeDamage(1, knockbackDir);
         }
     }
 
+
     void Update()
     {
-        Sprint();
-
+        // Handle horizontal movement
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
+        // Handle sprinting
+        Sprint();
+
+        // Update the animator with the speed
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
-        // Raycast downwards to check for ground
+        // Check if the player is grounded
         RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, groundLayer);
         isGrounded = hit.collider != null;
-
-        // Debug to check if the player is considered grounded
-        Debug.Log("Is Grounded: " + isGrounded);
-
-        // Debug to show the collider's tag the player is currently on top of
-        if (hit.collider != null)
-        {
-            Debug.Log("Standing on: " + hit.collider.tag);
-        }
-
         animator.SetBool("IsGrounded", isGrounded);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        // Handle jumping
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isClimbing))
         {
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsFalling", false);
-
-            // Debug to confirm jump
-            Debug.Log("Jumping");
+            isClimbing = false;
         }
 
-        if (!isGrounded && rb.velocity.y < 0)
+        // Detect if player is falling
+        if (!isGrounded && rb.velocity.y < 0 && !isClimbing)
         {
             animator.SetBool("IsFalling", true);
             animator.SetBool("IsJumping", false);
-
-            // Debug to confirm the player is falling
-            Debug.Log("Falling");
         }
-        if (Input.GetKeyDown(KeyCode.S) && !isGrounded)
+
+        // Climb up or down
+        if (isClimbing)
+        {
+            float verticalInput = Input.GetAxis("Vertical");
+            rb.velocity = new Vector2(rb.velocity.x, verticalInput * currentLadder.climbSpeed);
+            rb.gravityScale = 0; // Remove gravity effect while climbing
+
+            // Stop any other vertical movement while climbing
+            if (verticalInput == 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+            }
+        }
+        else if (!isClimbing && !isGrounded)
+        {
+            // If in the air and not climbing, make sure gravity affects the player
+            rb.gravityScale = 1;
+        }
+
+        // Dropping down through platforms
+        if (Input.GetKeyDown(KeyCode.S) && !isGrounded && !isClimbing)
         {
             StartCoroutine(DropDown());
-
-            // Debug to confirm drop down
-            Debug.Log("Trying to Drop Down");
         }
-        else if (isGrounded)
+
+        // If the player is grounded, reset the falling animation
+        if (isGrounded)
         {
             animator.SetBool("IsFalling", false);
         }
@@ -134,7 +151,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-      
+
         if (groundCheck == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
@@ -183,11 +200,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void RefillStamina(float amount)
     {
-        
-            currentStamina += amount;
-            currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
-            UpdateStaminaSlider();
-        
+
+        currentStamina += amount;
+        currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
+        UpdateStaminaSlider();
+
     }
 
 
@@ -223,7 +240,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     //pudding powerUp 
-    
+
 
     public void ActivatePuddingPower(float duration)
     {
@@ -258,10 +275,32 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsComingFromBelow(Collider2D platform)
+    public void SetClimbing(bool climbing, LadderClimb ladder = null)
     {
-        // Assuming the player's position is the center at their feet
-        return transform.position.y < platform.bounds.max.y;
+        isClimbing = climbing;
+        currentLadder = climbing ? ladder : null;
+       // animator.SetBool("IsClimbing", climbing); // Ensure you have an IsClimbing parameter in your Animator
+
+        if (!climbing)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 0); 
+        }
+    }
+
+    private bool IsPlayerComingFromAbove(Collision2D collision)
+    {
+        // Get the highest contact point
+        Vector2 highestContactPoint = collision.contacts[0].point;
+        foreach (var contact in collision.contacts)
+        {
+            if (contact.point.y > highestContactPoint.y)
+            {
+                highestContactPoint = contact.point;
+            }
+        }
+
+        // Compare the highest contact point to the center of the player
+        return highestContactPoint.y < transform.position.y;
     }
 }
 
@@ -269,4 +308,5 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-  
+
+
