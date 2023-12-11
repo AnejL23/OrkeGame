@@ -9,30 +9,29 @@ public class PlayerMovement : MonoBehaviour
     public float maxFallSpeed = -10f;
     public float sprintSpeed = 8f;
     public float jumpForce = 5f;
+    private float jumpTimer;
+    public float maxJumpHoldTime = 0.5f;
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask groundLayer;
-    [SerializeField] private LayerMask platformLayerMask; // Assign the platform layer here
+    [SerializeField] private LayerMask platformLayerMask;
     private BoxCollider2D playerCollider;
-
     private Rigidbody2D rb;
     private Animator animator;
     private bool isGrounded;
-    private bool wasGroundedLastFrame;
-
     private float originalSpeed;
-
     public float maxStamina = 100f;
     private float currentStamina;
     public float bounceForce = 5f;
     private float staminaDrain = 40f;
     private float staminaRegen = 1f;
     private bool isSprinting;
-
-    private bool isClimbing; 
+    private bool isClimbing;
     private LadderClimb currentLadder;
-
     [SerializeField] private Slider staminaSlider;
+    [SerializeField] private ParticleSystem smokeEffect;
+    [SerializeField] private Collider2D playerFeetCollider;
+    private bool isDropping;
 
     void Start()
     {
@@ -40,100 +39,106 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         originalSpeed = moveSpeed;
         currentStamina = maxStamina;
-        Debug.Log("Initial Stamina: " + currentStamina);
-        UpdateStaminaSlider();
-
-        playerCollider = GetComponent<BoxCollider2D>(); // Get the player's collider
+        playerCollider = GetComponent<BoxCollider2D>();
+        if (smokeEffect == null)
+        {
+            smokeEffect = GetComponentInChildren<ParticleSystem>();
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the collision is with the enemy head
-        if (collision.gameObject.CompareTag("EnemyHead"))
+        // Check for collision with enemy head
+        if (collision.gameObject.CompareTag("EnemyHead") && IsPlayerComingFromAbove(collision))
         {
-            // Confirm the player is coming from above
-            if (IsPlayerComingFromAbove(collision))
-            {
-                // Bounce the player up
-                rb.velocity = new Vector2(rb.velocity.x, bounceForce);
-
-                // Defeat the enemy
-                collision.gameObject.GetComponentInParent<EnemyAI>().DefeatEnemy();
-
-                // Do not proceed to take damage since we hit the enemy head
-                return;
-            }
+            rb.velocity = new Vector2(rb.velocity.x, bounceForce);
+            collision.gameObject.GetComponentInParent<EnemyAI>().DefeatEnemy();
+            return; // Exit the method to prevent other collision checks
         }
 
-        // Check if the collision is with the enemy body
-        else if (collision.gameObject.CompareTag("Enemy"))
+        // Check for collision with enemy body
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            // Player hits enemy body, take damage
             Vector2 knockbackDir = (transform.position - collision.transform.position).normalized;
             GetComponent<HealthManager>().TakeDamage(1, knockbackDir);
+            return; // Exit the method to prevent other collision checks
+        }
+
+        // Check for collision with one-way platforms
+        if (collision.gameObject.layer == LayerMask.NameToLayer("OneWayPlatform"))
+        {
+            // If the player is moving upwards (jumping), ignore the platform collision
+            if (rb.velocity.y > 0)
+            {
+                Physics2D.IgnoreCollision(playerCollider, collision.collider, true);
+            }
+            // If the player is not moving upwards or is dropping, enable platform collision
+            else if (rb.velocity.y <= 0 && !isDropping)
+            {
+                Physics2D.IgnoreCollision(playerCollider, collision.collider, false);
+            }
         }
     }
 
-
     void Update()
     {
-        // Handle horizontal movement
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-
-        // Handle sprinting
         Sprint();
-
-        // Update the animator with the speed
+        HandleSmokeEffect();
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
-
-        // Check if the player is grounded
         RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, groundLayer);
         isGrounded = hit.collider != null;
         animator.SetBool("IsGrounded", isGrounded);
-
-        // Handle jumping
+        if (moveInput > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (moveInput < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isClimbing))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetBool("IsJumping", true);
             animator.SetBool("IsFalling", false);
             isClimbing = false;
+            jumpTimer = Time.time;
         }
-
-        // Detect if player is falling
+        else if (Input.GetKey(KeyCode.Space) && Time.time - jumpTimer < maxJumpHoldTime)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + (jumpForce * Time.deltaTime));
+        }
         if (!isGrounded && rb.velocity.y < 0 && !isClimbing)
         {
             animator.SetBool("IsFalling", true);
             animator.SetBool("IsJumping", false);
         }
-
-        // Climb up or down
         if (isClimbing)
         {
             float verticalInput = Input.GetAxis("Vertical");
             rb.velocity = new Vector2(rb.velocity.x, verticalInput * currentLadder.climbSpeed);
-            rb.gravityScale = 0; // Remove gravity effect while climbing
-
-            // Stop any other vertical movement while climbing
-            if (verticalInput == 0)
+            rb.gravityScale = 0;
+            if (verticalInput != 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, 0);
+                rb.velocity = new Vector2(rb.velocity.x, verticalInput * currentLadder.climbSpeed);
             }
         }
-        else if (!isClimbing && !isGrounded)
+        else
         {
-            // If in the air and not climbing, make sure gravity affects the player
             rb.gravityScale = 1;
         }
-
-        // Dropping down through platforms
-        if (Input.GetKeyDown(KeyCode.S) && !isGrounded && !isClimbing)
+        if (Input.GetKeyDown(KeyCode.S) && !isGrounded)
         {
-            StartCoroutine(DropDown());
+            // Only allow the player to drop if they are on a one-way platform
+            Collider2D colliderBelow = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, platformLayerMask);
+            if (colliderBelow != null)
+            {
+                StartCoroutine(DropDown());
+            }
         }
 
-        // If the player is grounded, reset the falling animation
         if (isGrounded)
         {
             animator.SetBool("IsFalling", false);
@@ -142,7 +147,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb.velocity.y < maxFallSpeed)
         {
             rb.velocity = new Vector2(rb.velocity.x, maxFallSpeed);
@@ -151,26 +155,21 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-
         if (groundCheck == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
     void Sprint()
     {
         bool sprintKeyPressed = Input.GetKey(KeyCode.LeftShift);
         float moveInput = Input.GetAxis("Horizontal");
-
         isSprinting = sprintKeyPressed && Mathf.Abs(moveInput) > 0f && currentStamina > 0;
-
         if (!float.IsInfinity(currentStamina))
         {
             isSprinting = sprintKeyPressed && Mathf.Abs(moveInput) > 0f && currentStamina > 0;
-
-
             if (isSprinting)
             {
-
                 currentStamina -= staminaDrain * Time.deltaTime;
                 moveSpeed = sprintSpeed;
             }
@@ -180,11 +179,9 @@ public class PlayerMovement : MonoBehaviour
                 {
                     currentStamina += staminaRegen * Time.deltaTime;
                 }
-
                 moveSpeed = 2f;
             }
         }
-
         currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
         UpdateStaminaSlider();
     }
@@ -197,50 +194,35 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
     public void RefillStamina(float amount)
     {
-
         currentStamina += amount;
         currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina);
         UpdateStaminaSlider();
-
     }
 
-
-    //super powers za sendvic
     public void ActivateSuperPower(float staminaDuration, float extraSpeed, float speedDuration)
     {
-        Debug.Log("Aktiviranje super mo?i - neomejena vzdržljivost in pove?anje hitrosti");
         StartCoroutine(SuperStamina(staminaDuration));
         StartCoroutine(SpeedBoost(extraSpeed, speedDuration));
     }
 
     private IEnumerator SuperStamina(float duration)
     {
-        float previousStamina = currentStamina; // Shranite trenutno vrednost vzdržljivosti
-        currentStamina = Mathf.Infinity; // Nastavite na neskon?no
-        UpdateStaminaSlider(); // Posodobite UI
-        Debug.Log("Super vzdržljivost aktivirana");
-
+        float previousStamina = currentStamina;
+        currentStamina = Mathf.Infinity;
+        UpdateStaminaSlider();
         yield return new WaitForSeconds(duration);
-
-        currentStamina = previousStamina; // Obnovite na shranjeno vrednost vzdržljivosti
-        UpdateStaminaSlider(); // Posodobite UI
-        Debug.Log("Super vzdržljivost deaktivirana");
+        currentStamina = previousStamina;
+        UpdateStaminaSlider();
     }
 
     private IEnumerator SpeedBoost(float extraSpeed, float duration)
     {
-        moveSpeed += extraSpeed; // pove?ajte hitrost
+        moveSpeed += extraSpeed;
         yield return new WaitForSeconds(duration);
-        moveSpeed = originalSpeed; // resetirajte hitrost na prvotno vrednost
+        moveSpeed = originalSpeed;
     }
-
-
-
-    //pudding powerUp 
-
 
     public void ActivatePuddingPower(float duration)
     {
@@ -254,42 +236,22 @@ public class PlayerMovement : MonoBehaviour
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("PassThroughWalls"), false);
     }
 
-    private IEnumerator DropDown()
+    private IEnumerator DropDownCoroutine()
     {
-        // Allow the player to drop down through the platform
-        if (isGrounded)
-        {
-            // Find all colliders that are considered one-way platforms
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, platformLayerMask);
-            foreach (Collider2D collider in colliders)
-            {
-                // Disable the platform's collider temporarily
-                collider.enabled = false;
-            }
-            yield return new WaitForSeconds(0.5f); // Wait for half a second
-            foreach (Collider2D collider in colliders)
-            {
-                // Re-enable the platform's collider
-                collider.enabled = true;
-            }
-        }
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), true);
+        yield return new WaitForSeconds(0.5f);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), false);
     }
 
     public void SetClimbing(bool climbing, LadderClimb ladder = null)
     {
         isClimbing = climbing;
-        currentLadder = climbing ? ladder : null;
-       // animator.SetBool("IsClimbing", climbing); // Ensure you have an IsClimbing parameter in your Animator
-
-        if (!climbing)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0); 
-        }
+        currentLadder = ladder;
+        GetComponent<Rigidbody2D>().gravityScale = climbing ? 0 : 1;
     }
 
     private bool IsPlayerComingFromAbove(Collision2D collision)
     {
-        // Get the highest contact point
         Vector2 highestContactPoint = collision.contacts[0].point;
         foreach (var contact in collision.contacts)
         {
@@ -298,15 +260,54 @@ public class PlayerMovement : MonoBehaviour
                 highestContactPoint = contact.point;
             }
         }
-
-        // Compare the highest contact point to the center of the player
         return highestContactPoint.y < transform.position.y;
     }
+
+
+    private IEnumerator DropDown()
+    {
+        isDropping = true;
+        
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), true);
+        yield return new WaitForSeconds(0.5f); 
+        isDropping = false;
+        
+        yield return new WaitForSeconds(0.2f);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), false);
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("OneWayPlatform"))
+        {
+            Physics2D.IgnoreCollision(playerFeetCollider, collision.collider, false);
+        }
+    }
+
+    private void HandleSmokeEffect()
+    {
+        if (smokeEffect != null)
+        {
+            if (Mathf.Abs(rb.velocity.x) > 0.1f && isGrounded)
+            {
+                if (!smokeEffect.isPlaying)
+                {
+                    smokeEffect.Play();
+                }
+                var shapeModule = smokeEffect.shape;
+                shapeModule.rotation = new Vector3(0, rb.velocity.x > 0 ? 180 : 0, 0);
+            }
+            else
+            {
+                if (smokeEffect.isPlaying)
+                {
+                    smokeEffect.Stop();
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("SmokeEffect not set on " + gameObject.name);
+        }
+    }
 }
-
-
-
-
-
-
-
