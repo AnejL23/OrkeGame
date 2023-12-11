@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: cbe02ba7eb0abae4faae974091d096b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d111c872cff60429846be551fdd516
+      internalID: 1621446726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c39f84be940654398535c0781e10e8
+      internalID: -678106132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_2
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e63c891a39b2c4d96d4c48545900a8
+      internalID: 247436706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_3
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02976c2ee2792324a838170c3b6af855
+      internalID: 1193075519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0fabbbe9d456849806d587df4ee404
+      internalID: 1924962284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9bb2833fce7864ea9468df684b5126
+      internalID: -1179761334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1919
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6090e604aa26a40bd28e890d0accb1
+      internalID: -928179427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1919
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc6dfc67e03367419f85cd5224226c7
+      internalID: -430541494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1663
+        width: 45
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677c89f0b0459474eaeb816381bccba0
+      internalID: 293070411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1662
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f7c1115ad49594c92047d1b8fea090
+      internalID: 831701576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_10
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1662
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5757b754a6cd1d84099bcccb1234c4fb
+      internalID: -163891294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_11
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1662
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922b0fb0d4533c247a7957ae3c616a09
+      internalID: -1269847408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_12
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1662
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e32e331c36840458abae959f377126
+      internalID: 592998019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_13
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1662
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d0c829233d51144ab80d3b0086c199
+      internalID: 207220101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1662
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e8ba44a05a01442af42143559b35e7
+      internalID: -1168825313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1662
+        width: 46
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9491502427dbc4ba183956fc1323a7
+      internalID: 364604738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1406
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f357cff95e435846b8188030b0ad74c
+      internalID: 1758139484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1406
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ddafe3f446eca4bb26bcdbc6ecbeec
+      internalID: -2134691600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_18
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1406
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6a3235da6b6ff49aa1adb092eded65
+      internalID: 1125679149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_19
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1406
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eca8c71fe699814fbb437bf73e5af84
+      internalID: -422684706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_20
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1407
+        width: 45
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b01993be7aedd34ea8dcfe6a193fb52
+      internalID: -1297919963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_21
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1407
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7c05aa6a3a0db4086cb081ff8312d4
+      internalID: 1963921172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_22
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1407
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ffdab33ab49a74ca4d7b53f5a7b290
+      internalID: -195683389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_23
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1407
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcda034b1dba644c957384b261e2d0a
+      internalID: -456096291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c562a43dda3a46f4b961dc7fa3940fc8
+      internalID: -65817308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_25
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b945c32cbcd08c74b89a6ef88cae4917
+      internalID: -1319177077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_26
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3981f984bcfc21a429696539117c6a07
+      internalID: -237762793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_27
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac85fb1b5fb74040a1eb5d12a1865cb
+      internalID: 1525011287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_28
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67651ffa702c1d440b2d1509248ef381
+      internalID: -637724333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_idle_29
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1151
+        width: 44
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ac97d5447e4684ebc22fc778543c36
+      internalID: 1900862478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      orke_sprites_sheet_idle_0: 1621446726
+      orke_sprites_sheet_idle_1: -678106132
+      orke_sprites_sheet_idle_10: -163891294
+      orke_sprites_sheet_idle_11: -1269847408
+      orke_sprites_sheet_idle_12: 592998019
+      orke_sprites_sheet_idle_13: 207220101
+      orke_sprites_sheet_idle_14: -1168825313
+      orke_sprites_sheet_idle_15: 364604738
+      orke_sprites_sheet_idle_16: 1758139484
+      orke_sprites_sheet_idle_17: -2134691600
+      orke_sprites_sheet_idle_18: 1125679149
+      orke_sprites_sheet_idle_19: -422684706
+      orke_sprites_sheet_idle_2: 247436706
+      orke_sprites_sheet_idle_20: -1297919963
+      orke_sprites_sheet_idle_21: 1963921172
+      orke_sprites_sheet_idle_22: -195683389
+      orke_sprites_sheet_idle_23: -456096291
+      orke_sprites_sheet_idle_24: -65817308
+      orke_sprites_sheet_idle_25: -1319177077
+      orke_sprites_sheet_idle_26: -237762793
+      orke_sprites_sheet_idle_27: 1525011287
+      orke_sprites_sheet_idle_28: -637724333
+      orke_sprites_sheet_idle_29: 1900862478
+      orke_sprites_sheet_idle_3: 1193075519
+      orke_sprites_sheet_idle_4: 1924962284
+      orke_sprites_sheet_idle_5: -1179761334
+      orke_sprites_sheet_idle_6: -928179427
+      orke_sprites_sheet_idle_7: -430541494
+      orke_sprites_sheet_idle_8: 293070411
+      orke_sprites_sheet_idle_9: 831701576
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
