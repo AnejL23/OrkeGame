@@ -1,0 +1,1548 @@
+fileFormatVersion: 2
+guid: a797c60caef89ce4badb79a4081721ce
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orke_sprites_walking_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1406
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae511f0d786dd440a6698ea517e3cb1
+      internalID: 1478327999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_1
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1406
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e26943b8927040b11bbf25792f627
+      internalID: 767937458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_2
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1406
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd79ce583f3014d87788ca62f49055
+      internalID: -544038934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_3
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1406
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6df500424bb7fa4d85543dc47fbe8c7
+      internalID: 1809658971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1406
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dff079d1be36764db7041cbae3570bf
+      internalID: -547319415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_5
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1406
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a474d3cbfc9cd4c8cec6d5278e9c91
+      internalID: -1733898174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_6
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1406
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416a65cd08a71224298e420d01dd688e
+      internalID: 388509950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_7
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1407
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffe4b5eaf5790c478bcce5fb7ee442b
+      internalID: 2010601525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1219
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892a4c8e9ff15df46b2a41b2524c9791
+      internalID: -358095206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1219
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094a1f03ac09f0149a45bd5ea14f9128
+      internalID: 1576624037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_10
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1219
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83942d7984181a04c9f841766b59cbbb
+      internalID: -1481848854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_11
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1220
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1d645cba30ab94797f7d224e01c13d
+      internalID: -737923818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_12
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1219
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dbe4ed44763664cb84334bade5d161
+      internalID: 191203068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_13
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1219
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f28ffa8e9a22c458b7d10a336d0dc1
+      internalID: -935102721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_14
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1219
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14067dd40e671a54fb4016c104bad10e
+      internalID: -1534644546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_15
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1219
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bc67884587de8429291a216db6601a
+      internalID: -198561522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1031
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6f6ab46d47ab947a3bfd529731a41e
+      internalID: -1775407556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1031
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92b3b29432a7e1438cd6a1a4d2ca8e8
+      internalID: -1119396575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_18
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1031
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406676d4bac55d14ba7b72eebb533b63
+      internalID: 665517667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1031
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b84e70ce21f184186775de8feff2c1
+      internalID: 1027671800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_20
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1031
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ac360e7563432449ff68bf452ca8a4
+      internalID: -252163186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_21
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1031
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5797d6c7a7502b438ba0eff3a26f1bb
+      internalID: -1211883460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_22
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1031
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6dc3ce85f41c84aa0d879c0fc5f86e
+      internalID: 934136047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_23
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1031
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd031783fafacc44d93ddbffecd40dec
+      internalID: -1723839161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 843
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7fca19e88a6634783dd57ca1d28c47
+      internalID: -12621146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_25
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 843
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac17bcb59452f9448e08a4dd25e1340
+      internalID: 1425830565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_26
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 843
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018ae66cff0e6f04f8f02c0eeab00c2e
+      internalID: -1962210862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_27
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 843
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd9163848ad7f146952a221e5bb1820
+      internalID: 570237554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_28
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 843
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f29cf82eb880974ea10d044744bbb33
+      internalID: -820276533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_29
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 843
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752756cb4f8ca48499f4b1024b2faf5d
+      internalID: 992027574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_30
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 843
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7df7a682ee65f419aa8f62492de354
+      internalID: -581269153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_31
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 843
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ee6423578a41d4b873b057a476768c
+      internalID: -1457349845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 656
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b93330052044642858298580380321
+      internalID: 1207754095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_33
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 656
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9ac7bb350f5b043aa95f0735ef6127
+      internalID: 2055697799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_34
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 656
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d544d513977ae2742aa836c71c7f2c77
+      internalID: -390559301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_35
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 656
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111ce98a380ef0248b3cc1b3f505dffc
+      internalID: -2101450311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_36
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 656
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252d1f0c76dc4c644be72c8c8e1bfa90
+      internalID: -574196143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_37
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 656
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445260a651a969f47a969d4f591c61e1
+      internalID: 1297415639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_38
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 656
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b624db2d075fd7541b9d22f00b6dbe3d
+      internalID: 1552561930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_39
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 656
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f6a91a617b52549be214037d3cc3a6
+      internalID: 292428887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 469
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7404c99cfc129c4fa7415c223f0db5f
+      internalID: 1032395959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_41
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 469
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885f3260c5b37cf49a7bc3a5f7f78308
+      internalID: -878481962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_42
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 469
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded535f5acef4224daf6a8a2ab8816a3
+      internalID: 1861655672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_43
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 469
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef82e1af43fcda2418194bfcfb3a5dda
+      internalID: 482850576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_44
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 468
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12aee362dd23474a909909977d94e9d
+      internalID: -1477553615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_45
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 469
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44e3a8c02b5b704a93ae731b4ca75a3
+      internalID: -726249451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_46
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 469
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9de3f8858a494ab063a87640388d4
+      internalID: -89314708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_47
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 470
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7688326e3df154f91669cf24001666
+      internalID: -1291998561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 282
+        width: 28
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61147fafaa251454684f4c3b17daedf9
+      internalID: 777405003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_49
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 282
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a47627c50c6e96449cd86bd90c61d09
+      internalID: 1442667772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_50
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 282
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516f5e087c59254418de4731eb384584
+      internalID: -489325203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_51
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 283
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ae8816704337f4f8001ea5b85b6b5f
+      internalID: 2073426376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_52
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 282
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735cf071e18ec9a4fae6ec4ee60a4a7f
+      internalID: 1028128264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_53
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 282
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286c5571684b6b64686710858522cbe2
+      internalID: -1864926022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_54
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 282
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721abed94575c2b47bb623160013ecfb
+      internalID: 278458948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_55
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 281
+        width: 29
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02fc657241610b45bf9ab3e6417ca27
+      internalID: 101942875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_56
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 94
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3619c7e1a5b7b4c8b7eda1199d2af6
+      internalID: -104567094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_57
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 94
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090047597082eb44197cd9fa77a40d31
+      internalID: 7491909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_58
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 94
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e8b5711a9c987489e0cd9323e383bd
+      internalID: 2019378307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_59
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 94
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb12ea41abdec8a4b8c51e49bb05c8c1
+      internalID: 1549035869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_60
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 94
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b672a9645310a840942226ff1449f50
+      internalID: 1655133794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_61
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 94
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb594f43c035fe4d86a6b6e81c8df32
+      internalID: -1397738684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_62
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 93
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b356598bcbb8b146be5f3eb606a7a35
+      internalID: -233118380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_walking_63
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 93
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002c756eebea08947bc7621541af5a17
+      internalID: 1046536777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      orke_sprites_walking_0: 1478327999
+      orke_sprites_walking_1: 767937458
+      orke_sprites_walking_10: -1481848854
+      orke_sprites_walking_11: -737923818
+      orke_sprites_walking_12: 191203068
+      orke_sprites_walking_13: -935102721
+      orke_sprites_walking_14: -1534644546
+      orke_sprites_walking_15: -198561522
+      orke_sprites_walking_16: -1775407556
+      orke_sprites_walking_17: -1119396575
+      orke_sprites_walking_18: 665517667
+      orke_sprites_walking_19: 1027671800
+      orke_sprites_walking_2: -544038934
+      orke_sprites_walking_20: -252163186
+      orke_sprites_walking_21: -1211883460
+      orke_sprites_walking_22: 934136047
+      orke_sprites_walking_23: -1723839161
+      orke_sprites_walking_24: -12621146
+      orke_sprites_walking_25: 1425830565
+      orke_sprites_walking_26: -1962210862
+      orke_sprites_walking_27: 570237554
+      orke_sprites_walking_28: -820276533
+      orke_sprites_walking_29: 992027574
+      orke_sprites_walking_3: 1809658971
+      orke_sprites_walking_30: -581269153
+      orke_sprites_walking_31: -1457349845
+      orke_sprites_walking_32: 1207754095
+      orke_sprites_walking_33: 2055697799
+      orke_sprites_walking_34: -390559301
+      orke_sprites_walking_35: -2101450311
+      orke_sprites_walking_36: -574196143
+      orke_sprites_walking_37: 1297415639
+      orke_sprites_walking_38: 1552561930
+      orke_sprites_walking_39: 292428887
+      orke_sprites_walking_4: -547319415
+      orke_sprites_walking_40: 1032395959
+      orke_sprites_walking_41: -878481962
+      orke_sprites_walking_42: 1861655672
+      orke_sprites_walking_43: 482850576
+      orke_sprites_walking_44: -1477553615
+      orke_sprites_walking_45: -726249451
+      orke_sprites_walking_46: -89314708
+      orke_sprites_walking_47: -1291998561
+      orke_sprites_walking_48: 777405003
+      orke_sprites_walking_49: 1442667772
+      orke_sprites_walking_5: -1733898174
+      orke_sprites_walking_50: -489325203
+      orke_sprites_walking_51: 2073426376
+      orke_sprites_walking_52: 1028128264
+      orke_sprites_walking_53: -1864926022
+      orke_sprites_walking_54: 278458948
+      orke_sprites_walking_55: 101942875
+      orke_sprites_walking_56: -104567094
+      orke_sprites_walking_57: 7491909
+      orke_sprites_walking_58: 2019378307
+      orke_sprites_walking_59: 1549035869
+      orke_sprites_walking_6: 388509950
+      orke_sprites_walking_60: 1655133794
+      orke_sprites_walking_61: -1397738684
+      orke_sprites_walking_62: -233118380
+      orke_sprites_walking_63: 1046536777
+      orke_sprites_walking_7: 2010601525
+      orke_sprites_walking_8: -358095206
+      orke_sprites_walking_9: 1576624037
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

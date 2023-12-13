@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: 80107f68ead2c924c8e0ea52249415bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1405
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5518ddea0079646a62a90adf8c55ed
+      internalID: 591493158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1405
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08524f5b17333f542870ce1a8148d166
+      internalID: 1582908331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_2
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1405
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b8413a3dd4cf24aabacad5e389de62
+      internalID: 539750517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_3
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1405
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdc923723435004693e661d7069d1b5
+      internalID: -1318115131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_4
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1405
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac337a04454c10d4d8bddd2bed4557de
+      internalID: -243144663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_5
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1405
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6eda461ecafef74a836d5d902142faa
+      internalID: -310070368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_6
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1405
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa36ef346aa4d743881ceab3aa8d920
+      internalID: 1403438433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_7
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1405
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4884c5957b2ca6a48918388915fb3f85
+      internalID: 1199470562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1217
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3c91393fabda948bc5cc60264a8be6
+      internalID: -1023426992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1217
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcce3d6723042a24a8ecf53d7e2223aa
+      internalID: -156059540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_10
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1217
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8fd00d3d5ea9547aa754f8b2f7ce9f
+      internalID: 1523850278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_11
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1217
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e41268edc6bab48b448922843c433e
+      internalID: -1970839778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_12
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1217
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c49873eac449240b42e9a7f0016909
+      internalID: -2129278406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_13
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1217
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d21a35a7bd7144083ca79ae5c148db
+      internalID: -1881483018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1217
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d5167e42359f344a94ade33ed2a35f
+      internalID: -732221150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_15
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1217
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de1b423d0848114d92052920122b6b7
+      internalID: 1052404332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1029
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967f20d3a2768f842a46677930f01a7f
+      internalID: -813345250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1029
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e1cece6e4ed0444b7e0b4ecf125382
+      internalID: 1519055077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_18
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1029
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239875b5e1745054fb29d89906a6c184
+      internalID: -227601121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_19
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1029
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eef22a0bbd0ec41a2e035c5283aaf6
+      internalID: -1345902036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_20
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1030
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db1e21ccb066bf489bab87968379635
+      internalID: 1405897695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_21
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1030
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff1361286bd13249bc65ab527056874
+      internalID: -529521571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_22
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1030
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cc0dbef2caa164ea1010d4aa86ad31
+      internalID: 192173107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_23
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1030
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8d60aa3a959c242bf6bdabf68f6728
+      internalID: -1326373020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 842
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526137902104c1340ae4a235cf99c698
+      internalID: 1890414583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 842
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55a2f067e7ce654fbb7dc0857fc36e9
+      internalID: 793229855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_26
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 842
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c184affde5efc349ab927b6f2fed157
+      internalID: 698191044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_27
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 842
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e53216ab18009240be031926b64f6c5
+      internalID: -205121055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_28
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 842
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed26c6e05c75f554b91210b35c4f8834
+      internalID: -564881335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orke_sprites_sheet_jumping_29
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 842
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f7fd322dd4e324498a8271fe1ee4bd
+      internalID: 390383432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      orke_sprites_sheet_jumping_0: 591493158
+      orke_sprites_sheet_jumping_1: 1582908331
+      orke_sprites_sheet_jumping_10: 1523850278
+      orke_sprites_sheet_jumping_11: -1970839778
+      orke_sprites_sheet_jumping_12: -2129278406
+      orke_sprites_sheet_jumping_13: -1881483018
+      orke_sprites_sheet_jumping_14: -732221150
+      orke_sprites_sheet_jumping_15: 1052404332
+      orke_sprites_sheet_jumping_16: -813345250
+      orke_sprites_sheet_jumping_17: 1519055077
+      orke_sprites_sheet_jumping_18: -227601121
+      orke_sprites_sheet_jumping_19: -1345902036
+      orke_sprites_sheet_jumping_2: 539750517
+      orke_sprites_sheet_jumping_20: 1405897695
+      orke_sprites_sheet_jumping_21: -529521571
+      orke_sprites_sheet_jumping_22: 192173107
+      orke_sprites_sheet_jumping_23: -1326373020
+      orke_sprites_sheet_jumping_24: 1890414583
+      orke_sprites_sheet_jumping_25: 793229855
+      orke_sprites_sheet_jumping_26: 698191044
+      orke_sprites_sheet_jumping_27: -205121055
+      orke_sprites_sheet_jumping_28: -564881335
+      orke_sprites_sheet_jumping_29: 390383432
+      orke_sprites_sheet_jumping_3: -1318115131
+      orke_sprites_sheet_jumping_4: -243144663
+      orke_sprites_sheet_jumping_5: -310070368
+      orke_sprites_sheet_jumping_6: 1403438433
+      orke_sprites_sheet_jumping_7: 1199470562
+      orke_sprites_sheet_jumping_8: -1023426992
+      orke_sprites_sheet_jumping_9: -156059540
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

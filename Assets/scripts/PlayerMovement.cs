@@ -64,20 +64,8 @@ public class PlayerMovement : MonoBehaviour
             return; // Exit the method to prevent other collision checks
         }
 
-        // Check for collision with one-way platforms
-        if (collision.gameObject.layer == LayerMask.NameToLayer("OneWayPlatform"))
-        {
-            // If the player is moving upwards (jumping), ignore the platform collision
-            if (rb.velocity.y > 0)
-            {
-                Physics2D.IgnoreCollision(playerCollider, collision.collider, true);
-            }
-            // If the player is not moving upwards or is dropping, enable platform collision
-            else if (rb.velocity.y <= 0 && !isDropping)
-            {
-                Physics2D.IgnoreCollision(playerCollider, collision.collider, false);
-            }
-        }
+       
+        
     }
 
     void Update()
@@ -87,9 +75,12 @@ public class PlayerMovement : MonoBehaviour
         Sprint();
         HandleSmokeEffect();
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
-        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRadius, groundLayer);
-        isGrounded = hit.collider != null;
+
+        // Use OverlapCircle to check if the player is grounded instead of raycasting
+        isGrounded = IsGrounded();
         animator.SetBool("IsGrounded", isGrounded);
+
+        // Player movement and flip code remains the same...
         if (moveInput > 0)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -98,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(-1, 1, 1);
         }
+
+        // Player jump code
         if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || isClimbing))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -110,11 +103,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + (jumpForce * Time.deltaTime));
         }
+
+        // Player falling animation code
         if (!isGrounded && rb.velocity.y < 0 && !isClimbing)
         {
             animator.SetBool("IsFalling", true);
             animator.SetBool("IsJumping", false);
         }
+
+        // Climbing code remains the same...
         if (isClimbing)
         {
             float verticalInput = Input.GetAxis("Vertical");
@@ -129,16 +126,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.gravityScale = 1;
         }
-        if (Input.GetKeyDown(KeyCode.S) && !isGrounded)
-        {
-            // Only allow the player to drop if they are on a one-way platform
-            Collider2D colliderBelow = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, platformLayerMask);
-            if (colliderBelow != null)
-            {
-                StartCoroutine(DropDown());
-            }
-        }
 
+       
+        
+
+        // Grounded falling animation code
         if (isGrounded)
         {
             animator.SetBool("IsFalling", false);
@@ -207,6 +199,19 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(SpeedBoost(extraSpeed, speedDuration));
     }
 
+    private bool IsGrounded()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, groundCheckRadius, groundLayer);
+        foreach (var collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private IEnumerator SuperStamina(float duration)
     {
         float previousStamina = currentStamina;
@@ -263,28 +268,7 @@ public class PlayerMovement : MonoBehaviour
         return highestContactPoint.y < transform.position.y;
     }
 
-
-    private IEnumerator DropDown()
-    {
-        isDropping = true;
-        
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), true);
-        yield return new WaitForSeconds(0.5f); 
-        isDropping = false;
-        
-        yield return new WaitForSeconds(0.2f);
-        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("OneWayPlatform"), false);
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("OneWayPlatform"))
-        {
-            Physics2D.IgnoreCollision(playerFeetCollider, collision.collider, false);
-        }
-    }
-
-    private void HandleSmokeEffect()
+     private void HandleSmokeEffect()
     {
         if (smokeEffect != null)
         {
