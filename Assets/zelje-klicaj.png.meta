@@ -1,0 +1,1122 @@
+fileFormatVersion: 2
+guid: 86a8bee154f198949b4a512d8b9d148f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zelje-klicaj_13
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1912
+        width: 57
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522a9a8e5b435c2469c4225cbc5b6134
+      internalID: 1607849953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_17
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1909
+        width: 47
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4f4ad578c43144888e75c96065145b
+      internalID: 1774355700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_18
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1909
+        width: 47
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b865f643cd65f43a6d7dfd0a311e42
+      internalID: -1371232812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_19
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1909
+        width: 47
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90b2924f9ff5b74fafc373080bf631a
+      internalID: -1114646266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_20
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1909
+        width: 47
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f967b707d0ff8f74baf1d2b0e5bcc250
+      internalID: 988225559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1903
+        width: 47
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8791c0dbf6677fa479f4b301f32d5d60
+      internalID: 403076947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1902
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf07a141dda632b44a4af53a77d02c2c
+      internalID: 415032369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_23
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1903
+        width: 47
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42207998d33aeb0428f2fe965e9d97df
+      internalID: -233316210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_40
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1667
+        width: 47
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cac1bae75164f24cb154664f057256b
+      internalID: -1186082989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_41
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1668
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf328b3602bd0e5419ed3f08c8999814
+      internalID: -1615010939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_42
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1667
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56ccd1ed12e18b408329e8bca5ff754
+      internalID: -1012664494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_43
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1665
+        width: 47
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1d0c3179caa5348888488e190a7b4b
+      internalID: 1181245982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_44
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1670
+        width: 46
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3b1867de0be85488ff4d76bd3dc3b3
+      internalID: 50142965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_45
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1660
+        width: 57
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03713a374318ec4798e01d50b53ce3f
+      internalID: 681138691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_46
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1659
+        width: 57
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49366af28834b83479bc828e34a6d802
+      internalID: -1409917620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_47
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1653
+        width: 57
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527770ca49786dc498ca7ce4eec7d13e
+      internalID: -762032906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_63
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1417
+        width: 46
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8f68970ebfd644687473827da8f303
+      internalID: -1728296306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_64
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1417
+        width: 46
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f66f4d4b53a0b46a2452a789e3d826
+      internalID: 1516095046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_65
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1415
+        width: 46
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75340ca783cfe942871f48bdf8e5462
+      internalID: -1368841105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_66
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1417
+        width: 46
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fbc13ab4599c5499dca18597e89f75
+      internalID: 337281590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_67
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1417
+        width: 46
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf903a7828282243949fada404e2a31
+      internalID: -1663642668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_69
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1410
+        width: 46
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf296e539471794391a56ed3d0056d9
+      internalID: -704253737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_70
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1410
+        width: 46
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9c342c541db6a499ac3976376b0682
+      internalID: 2111838089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_71
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1408
+        width: 47
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a9906e3b7d19b4f9cfec4da2d6386b
+      internalID: 86639608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_88
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1152
+        width: 47
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57e48226965e274d88117b5850df2ff
+      internalID: 1582112708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_89
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1152
+        width: 47
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418e47723fea8a54c9c0749ae9e8b16d
+      internalID: -1352676171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_90
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1152
+        width: 47
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bd7475aede61c468d74cca1799809c
+      internalID: 956491387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_91
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1151
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1de7f7748cf0445b52c017f4aa10b3
+      internalID: -1200892149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_92
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1150
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b3ceb32ac1f184ca8fb5bc91222e36
+      internalID: 1657473029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_93
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 1151
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e61af61383f8884799ea55fb200cccb
+      internalID: 1448504955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_94
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1151
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf8c010e501e30488daa9fc56ed5d99
+      internalID: -1414749369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_95
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1151
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083a170afc7e1bf4783fa48b0a842c6b
+      internalID: 1143972244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_112
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 895
+        width: 47
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed324b79fffad4982602a44d957c22
+      internalID: -1796388581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_113
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 894
+        width: 47
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73714914f7a6a7419592dc3e5a1550f
+      internalID: 19354573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_114
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 895
+        width: 47
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912586b03c7849340a3e56e8d11b98ee
+      internalID: -321835765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_115
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 890
+        width: 47
+        height: 76
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0692e51348aa2ec4386cd7db48e87027
+      internalID: 1791398063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_116
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 890
+        width: 47
+        height: 77
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36f38fea34515d4f80722c2755e623b
+      internalID: 1888949601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_117
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 891
+        width: 47
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1855a4207f5a72459eefe229f7a5f3a
+      internalID: -2115510052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_118
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 892
+        width: 47
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70ce67df9c04fe448ec1e479d02a27d
+      internalID: -663515557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_119
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 891
+        width: 47
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4790d0ec0c72b2d4d85ecb10f54d3617
+      internalID: -79541926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zelje-klicaj_120
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 639
+        width: 47
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac1861a9cf1b9f478ad8485d30c7255
+      internalID: -619426493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      zelje-klicaj_0: -1536086895
+      zelje-klicaj_1: 1802274362
+      zelje-klicaj_10: -1946137265
+      zelje-klicaj_100: -1257029234
+      zelje-klicaj_101: 547838397
+      zelje-klicaj_102: 1474140914
+      zelje-klicaj_103: 1082695305
+      zelje-klicaj_104: -2071393861
+      zelje-klicaj_105: 317036316
+      zelje-klicaj_106: -1380889035
+      zelje-klicaj_107: 835529258
+      zelje-klicaj_108: -310562759
+      zelje-klicaj_109: 1711635750
+      zelje-klicaj_11: 919927655
+      zelje-klicaj_110: 1347922114
+      zelje-klicaj_111: 215263471
+      zelje-klicaj_112: -1796388581
+      zelje-klicaj_113: 19354573
+      zelje-klicaj_114: -321835765
+      zelje-klicaj_115: 1791398063
+      zelje-klicaj_116: 1888949601
+      zelje-klicaj_117: -2115510052
+      zelje-klicaj_118: -663515557
+      zelje-klicaj_119: -79541926
+      zelje-klicaj_12: -1718036178
+      zelje-klicaj_120: -619426493
+      zelje-klicaj_13: 1607849953
+      zelje-klicaj_14: -1341490790
+      zelje-klicaj_15: -884179359
+      zelje-klicaj_16: -1380970967
+      zelje-klicaj_17: 1774355700
+      zelje-klicaj_18: -1371232812
+      zelje-klicaj_19: -1114646266
+      zelje-klicaj_2: 1701225144
+      zelje-klicaj_20: 988225559
+      zelje-klicaj_21: 403076947
+      zelje-klicaj_22: 415032369
+      zelje-klicaj_23: -233316210
+      zelje-klicaj_24: 1929948233
+      zelje-klicaj_25: -258268731
+      zelje-klicaj_26: 2075495167
+      zelje-klicaj_27: -1540146696
+      zelje-klicaj_28: -238781867
+      zelje-klicaj_29: -1848738251
+      zelje-klicaj_3: -2122738203
+      zelje-klicaj_30: 984344781
+      zelje-klicaj_31: -827198185
+      zelje-klicaj_32: 489319309
+      zelje-klicaj_33: 105039283
+      zelje-klicaj_34: 264895402
+      zelje-klicaj_35: 1050631261
+      zelje-klicaj_36: -691286184
+      zelje-klicaj_37: -1751081214
+      zelje-klicaj_38: -1644981631
+      zelje-klicaj_39: -610889263
+      zelje-klicaj_4: -1702735292
+      zelje-klicaj_40: -1186082989
+      zelje-klicaj_41: -1615010939
+      zelje-klicaj_42: -1012664494
+      zelje-klicaj_43: 1181245982
+      zelje-klicaj_44: 50142965
+      zelje-klicaj_45: 681138691
+      zelje-klicaj_46: -1409917620
+      zelje-klicaj_47: -762032906
+      zelje-klicaj_48: 1541054276
+      zelje-klicaj_49: -1463937850
+      zelje-klicaj_5: 620325814
+      zelje-klicaj_50: -1376468526
+      zelje-klicaj_51: 301497451
+      zelje-klicaj_52: 1302689053
+      zelje-klicaj_53: -359836722
+      zelje-klicaj_54: -812386351
+      zelje-klicaj_55: 80852625
+      zelje-klicaj_56: -1171350275
+      zelje-klicaj_57: 1661313615
+      zelje-klicaj_58: 763936610
+      zelje-klicaj_59: 1272271379
+      zelje-klicaj_6: -165885202
+      zelje-klicaj_60: -846951179
+      zelje-klicaj_61: 846313967
+      zelje-klicaj_62: -297478368
+      zelje-klicaj_63: -1728296306
+      zelje-klicaj_64: 1516095046
+      zelje-klicaj_65: -1368841105
+      zelje-klicaj_66: 337281590
+      zelje-klicaj_67: -1663642668
+      zelje-klicaj_68: 732801820
+      zelje-klicaj_69: -704253737
+      zelje-klicaj_7: -1004455400
+      zelje-klicaj_70: 2111838089
+      zelje-klicaj_71: 86639608
+      zelje-klicaj_72: -1399023079
+      zelje-klicaj_73: -280696968
+      zelje-klicaj_74: -1476087761
+      zelje-klicaj_75: 330097193
+      zelje-klicaj_76: -376696868
+      zelje-klicaj_77: 850564432
+      zelje-klicaj_78: -1412679013
+      zelje-klicaj_79: 1935145854
+      zelje-klicaj_8: 484028022
+      zelje-klicaj_80: 1188078195
+      zelje-klicaj_81: -16032199
+      zelje-klicaj_82: 1819989254
+      zelje-klicaj_83: -535619395
+      zelje-klicaj_84: -1727195711
+      zelje-klicaj_85: -927823149
+      zelje-klicaj_86: -308928274
+      zelje-klicaj_87: -359712436
+      zelje-klicaj_88: 1582112708
+      zelje-klicaj_89: -1352676171
+      zelje-klicaj_9: 398677528
+      zelje-klicaj_90: 956491387
+      zelje-klicaj_91: -1200892149
+      zelje-klicaj_92: 1657473029
+      zelje-klicaj_93: 1448504955
+      zelje-klicaj_94: -1414749369
+      zelje-klicaj_95: 1143972244
+      zelje-klicaj_96: -1460221161
+      zelje-klicaj_97: -1373815509
+      zelje-klicaj_98: -88773315
+      zelje-klicaj_99: -2002370698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

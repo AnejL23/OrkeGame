@@ -7,8 +7,8 @@ public class MainMenuManager : MonoBehaviour
 {
     public void PlayGame()
     {
-        // Assuming "GameScene" is the name of your main game scene
-        SceneManager.LoadScene("SampleScene");
+        
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void GoToMainMenu()
@@ -18,7 +18,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void ExitGame()
     {
-        // Quit the application
+      
         Application.Quit();
     }
 }
